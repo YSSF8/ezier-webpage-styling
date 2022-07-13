@@ -14,3 +14,5 @@ Link with the **Light mode version**:
   <link rel="stylesheet" href="LightMode.css">
 </head>
 ```
+## Screenshots
+<img src="Web capture_13-7-2022_152716_.jpeg" title="Dark mode preview" alt="">
