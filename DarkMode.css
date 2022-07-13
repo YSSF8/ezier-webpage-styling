@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+/* A dark mode body with Ubuntu's font */
+body {
+	background: #000;
+	color: #fff;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+/* Customized button with light-blue color */
+better-button {
+	border-radius: 8px;
+	background: var(--accent);
+	padding: 7px;
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 5px;
+	transition: .3s;
+}
+
+/* Makes the better-button tag when the cursor touches it the color be lighter */
+better-button:hover {
+	background: var(--accent-mouse-over);
+}
+
+a better-button, better-button a {
+	color: #fff;
+}
+
+a better-button:hover, better-button a:hover {
+	text-decoration: none;
+}
+
+a better-button:active, better-button a:active {
+	color: #fff;
+}
+
+uc {
+	text-transform: uppercase;
+}
+
+/* A text but bigger */
+big-text {
+	font-size: 25px;
+	display: block;
+}
+
+/* A text but bigger than the big-text */
+bigger-text {
+	font-size: 28px;
+	display: block;
+}
+
+/* A paragraph but bigger */
+big-p {
+	font-size: 25px;
+	display: block;
+	padding-top: 1.3rem;
+}
+
+/* A paragraph but bigger than the big-p */
+bigger-p {
+	font-size: 28px;
+	display: block;
+	padding-top: 1.3rem;
+}
+
+/* Makes the text-input beautiful */
+textarea, input[type="text"], input[type="number"] {
+	border: 1px solid #bbb;
+	border-radius: 6px;
+	background: #1e1e1e;
+	color: #fff;
+	outline: none;
+}
+
+bc {
+	border-right: 7px solid var(--accent);
+	border-radius: 3px;
+	background: var(--accent);
+	padding: 0 5px;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: var(--accent);
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	color: var(--accent-mouse-over);
+}
+
+/* Removes the increment arrows from the number input (Chrome, Safari, Edge, Opera) */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Removes the increment arrows from the number input (Firefox) */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* The whole checkbox */
+.container {
+ 	display: block;
+ 	position: relative;
+  	padding-left: 35px;
+  	margin-bottom: 12px;
+  	cursor: pointer;
+  	font-size: 22px;
+  	-webkit-user-select: none;
+  	-moz-user-select: none;
+  	-ms-user-select: none;
+  	user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  	position: absolute;
+  	opacity: 0;
+  	cursor: pointer;
+  	height: 0;
+  	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	border-radius: 5px;
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 25px;
+  	width: 25px;
+  	background-color: #eee;
+  	transition: .3s;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  	background-color: var(--accent);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  	content: "";
+  	position: absolute;
+  	display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  	display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+	border-radius: 2.5px;
+  	left: 9px;
+  	top: 5px;
+  	width: 5px;
+  	height: 10px;
+  	border: solid white;
+  	border-width: 0 3px 3px 0;
+  	-webkit-transform: rotate(45deg);
+  	-ms-transform: rotate(45deg);
+  	transform: rotate(45deg);
+}
+
+/* Removes the <br> tag selection */
+br::selection {
+	background: none;
+}
+
+:root {
+	--accent: #186dad;
+	--accent-mouse-over: #2081cb;
+}
