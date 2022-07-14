@@ -59,4 +59,5 @@ Link with the **Light mode version**:
 
 ## Changed some default elements
 the **textarea** & **text/unmber** input is rounded.
+
 the **br** tag selection is now disabled.
