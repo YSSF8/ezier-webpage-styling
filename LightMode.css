@@ -22,14 +22,17 @@ better-button:hover {
 	background: var(--accent-mouse-over);
 }
 
+/* Fixes the changed better-button text color after adding a URL */
 a better-button, better-button a {
 	color: #fff;
 }
 
+/* Fixes the underlined text after the mouse over the better-button */
 a better-button:hover, better-button a:hover {
 	text-decoration: none;
 }
 
+/* Fixes the changed when clicking the better-button text color after adding a URL */
 a better-button:active, better-button a:active {
 	color: #fff;
 }
